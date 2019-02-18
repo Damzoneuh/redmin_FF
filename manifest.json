@@ -1,0 +1,24 @@
+{
+
+  "manifest_version": 2,
+  "name": "Redmine for Infomaniak",
+  "version": "1.0,0",
+
+  "description": "Add redmine fonctions for Infomaniak's desktops",
+
+  "icons": {
+    "48": "src/logo.svg"
+  },
+
+  "permissions": [
+    "activeTab"
+  ],
+  "homepage_url": "http://localhost:3000/",
+  "content_scripts": [
+    {
+      "matches": ["*://*.mozilla.org/*"],
+      "js": ["redmine.js"]
+    }
+  ]
+
+}
